@@ -6,6 +6,7 @@
 \usepackage{relsize}
 \usepackage{fancyvrb}
 \usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{booktabs}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont{Charis SIL}
@@ -60,6 +61,34 @@ Poprzez GUI aplikacja pozwala na:
 
 \section{Obsługa}
 \label{sec:obsluga}
+
+Aplikacja korzysta z~jednego okna głównego oraz kilku pomocniczych okien
+dialogowych.
+
+\subsection{Okno główne}
+
+Okno główne zawiera z~lewej strony tabelę z~punktami. Jej zawartość można
+edytować. W~prawej, górnej ćwiartce znajduje się pole na wykres. Pod wykresem
+jest tabela z~wyznaczonymi wielomianami i~ich przedziałami.
+
+Wykres można przybliżać korzystając z~ze skrótów klawiaturowych opisanych
+w~tabeli \ref{tab:skroty} na stronie \pageref{tab:skroty}. Przesuwanie jest
+dostępne wykorzystując paski na obrzeżach lub scroll myszki.
+
+\begin{table}[p]
+  \centering
+  \begin{tabular}{r c}
+    \toprule
+    {\bf Akcja} & {\bf Skrót} \\
+    \midrule
+    zoom in     &  \prog{⌘+}  \\
+    zoom out    &  \prog{⌘-}  \\
+    zoom 100\%  &  \prog{⌘0}  \\
+    \bottomrule
+  \end{tabular}
+  \caption{Skróty klawiaturowe aplikacji.}
+  \label{tab:skroty}
+\end{table}
 
 \section{Pliki}
 \label{sec:pliki}
