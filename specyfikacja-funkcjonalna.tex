@@ -7,6 +7,7 @@
 \usepackage{fancyvrb}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{booktabs}
+\usepackage{graphicx}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont{Charis SIL}
@@ -70,13 +71,44 @@ dialogowych.
 
 \subsection{Okno główne}
 
-Okno główne zawiera z~lewej strony tabelę z~punktami. Jej zawartość można
-edytować. W~prawej, górnej ćwiartce znajduje się pole na wykres. Pod wykresem
-jest tabela z~wyznaczonymi wielomianami i~ich przedziałami.
+Okno główne (rysunek nr~\ref{fig:okno-glowne}) zawiera z~lewej strony
+tabelę z~punktami. Jej zawartość można edytować. W~prawej, górnej ćwiartce
+znajduje się pole na wykres. Pod wykresem jest tabela z~wyznaczonymi
+wielomianami i~ich przedziałami.
 
 Wykres można przybliżać korzystając z~ze skrótów klawiaturowych opisanych
 w~tabeli \ref{tab:skroty} na stronie \pageref{tab:skroty}. Przesuwanie jest
 dostępne wykorzystując paski na obrzeżach lub scroll myszki.
+
+Wielomiany i~wykres są aktualizowane automatycznie przy każdej zmianie punktów
+w~tabeli.
+
+\begin{figure}[hb]
+  \centering
+  \includegraphics[width=\textwidth]{images/okno-glowne}
+  \caption{Okno główne aplikacji.}
+  \label{fig:okno-glowne}
+\end{figure}
+
+\subsection{Okna pomocnicze}
+
+\subsubsection{Okno eksportu wykresu}
+
+Aplikacja pozwala na eksport wykresu do pliku. Po wyborze akcji z~menu okna
+głównego, pojawia się modalne okno dialogowe (rysunek
+\ref{fig:eksport-wykresu}), pytające o~docelowe rozmiary i~format pliku.
+Następnie pojawia się standardowe okno dialogowe do wskazania miejsca zapisu.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.374\textwidth]{images/eksport-wykresu}
+  \caption{Okno dialogowe z~wartościami do eksportu wykresu.}
+  \label{fig:eksport-wykresu}
+\end{figure}
+
+\subsubsection{Okno wyboru pliku}
+
+W~pozostałych przypadkach wykorzystywane jest standardowe okno wyboru pliku.
 
 \begin{table}[p]
   \centering
