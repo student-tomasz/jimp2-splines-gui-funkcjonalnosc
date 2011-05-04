@@ -8,6 +8,7 @@
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{booktabs}
 \usepackage{graphicx}
+\usepackage{subfig}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont{Charis SIL}
@@ -85,6 +86,9 @@ plot''}. Przycisk \prog{``Add point''} dodaje pusty wiersz do tabeli
 z~punktami, przycisk \prog{``Remove selection''} usuwa z~tabeli zaznaczone
 wiersze.
 
+Menu akcji okna głównego (rysunki \ref{fig:menu-file}, \ref{fig:menu-plot})
+operują plikami tak jak program \prog{splines} z~projektu pierwszego.
+
 \begin{figure}[hb]
   \centering
   \includegraphics[width=\textwidth]{images/okno-glowne}
@@ -92,14 +96,22 @@ wiersze.
   \label{fig:okno-glowne}
 \end{figure}
 
-\subsection{Okna pomocnicze}
+\begin{figure}[h]
+  \centering
+  \subfloat[Menu {\tt File}.]{\label{fig:menu-file}\includegraphics[width=0.25\textwidth]{images/menu-file}}
+  \hspace{0.1\textwidth}
+  \subfloat[Menu {\tt Plot}.]{\label{fig:menu-plot}\includegraphics[width=0.28\textwidth]{images/menu-plot}}
+  \caption{Zestawienie akcji okna głównego.}
+  \label{fig:menu}
+\end{figure}
 
-\subsubsection{Okno eksportu wykresu}
+\subsection{Okno eksportu wykresu}
 
-Aplikacja pozwala na eksport wykresu do pliku. Po wyborze akcji z~menu okna
-głównego, pojawia się modalne okno dialogowe (rysunek
-\ref{fig:eksport-wykresu}), pytające o~docelowe rozmiary i~format pliku.
-Następnie pojawia się standardowe okno dialogowe do wskazania miejsca zapisu.
+Aplikacja pozwala na eksport wykresu do pliku. Po wyborze akcji \prog{``Plot >
+Export to image\ldots''} z~menu okna głównego, pojawia się modalne okno
+dialogowe (rysunek \ref{fig:eksport-wykresu}), pytające o~docelowe rozmiary
+i~format pliku. Po wyborze i~naciśnięciu \prog{OK} pojawia się standardowe okno
+dialogowe do wskazania miejsca zapisu.
 
 \begin{figure}[h]
   \centering
@@ -108,11 +120,7 @@ Następnie pojawia się standardowe okno dialogowe do wskazania miejsca zapisu.
   \label{fig:eksport-wykresu}
 \end{figure}
 
-\subsubsection{Okno wyboru pliku}
-
-W~pozostałych przypadkach wykorzystywane jest standardowe okno wyboru pliku.
-
-\begin{table}[p]
+\begin{table}[h]
   \centering
   \begin{tabular}{l c}
     \toprule
